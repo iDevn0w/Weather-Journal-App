@@ -1,0 +1,115 @@
+/* :root {
+  --app-background-color: #35353f;
+  --button-color: #5ce2ed;
+  --content-color: #26262d;
+} */
+/*{
+author: shwan youssif
+
+}*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #fff;
+}
+#app {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.app-container {
+  max-width: 500px;
+  height: 100%;
+  margin: 15px;
+  border: 1px solid rgb(200, 200, 200);
+  box-shadow: 5px 5px 5px rgb(200, 200, 200);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  background-color: #35353f;
+}
+#app .app-container .header {
+  flex: 1;
+  display: inherit;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(to left top, #35353f 70%, #23c1cf 30%);
+}
+.header h1 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #23c1cf;
+}
+#app .app-container .main {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#app .app-container .main form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+form input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #5ce2ed;
+  background-color: #35353f;
+  color: white;
+}
+form textarea {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #5ce2ed;
+  background-color: #35353f;
+  color: white;
+}
+form button {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #5ce2ed;
+  background-color: #5ce2ed;
+  color: #26262d;
+}
+.main #entryHolder {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #26262d;
+}
+
+#app .app-container .footer {
+  flex: 1;
+  font-size: 1.4rem;
+  display: inherit;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(to right bottom, #35353f 70%, #23c1cf 30%);
+}
+.footer h6,
+span {
+  color: #e7e7eb;
+}

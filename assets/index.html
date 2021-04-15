@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--author: shwan youssif-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mainStyle.css" />
+    <title>Weather Journal App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="app-container">
+        <header class="header">
+          <nav>
+            <h1>Weather Journal App</h1>
+          </nav>
+        </header>
+        <main class="main">
+          <form>
+            <input
+              type="text"
+              placeholder="enter your zip code"
+              id="zip"
+              autofocus
+            />
+            <textarea
+              id="fellings"
+              cols="40"
+              rows="10"
+              placeholder="enter your fellings"
+            ></textarea>
+            <button id="generate">Submit</button>
+          </form>
+          <section id="entryHolder">
+            <div id="date"></div>
+            <div id="temp"></div>
+            <div id="content"></div>
+          </section>
+        </main>
+        <footer class="footer">
+          <h6>4th FEND Nanodgree project by shwan youssif</h6>
+          <span>@udacity</span>
+        </footer>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
