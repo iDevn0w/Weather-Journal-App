@@ -9,12 +9,12 @@ const temp = document.getElementById("temp"); // get Tempreture
 const content = document.getElementById("content"); // get fellings
 const api = "http://api.openweathermap.org/data/2.5/weather?zip="; // api
 const key = "&appid=f712d0c8667d04a263f01d521f33c3d0"; // api key
-
+const unitsInCelcius = "&units=metric";
 btn.addEventListener("click", (event) => {
   event.preventDefault();
   const zip = document.getElementById("zip").value;
   // async function with chain promise easy handle data
-  const asynFlow = fetch(api + zip + key)
+  const asynFlow = fetch(api + zip + key + unitsInCelcius)
     .then((response) => {
       return response.ok ? response.json() : new Error("data not found");
     })
